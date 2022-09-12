@@ -1,0 +1,14 @@
+name: Add User
+
+on:
+  issues:
+    types: [opened, reopened]
+
+
+jobs:
+  add_user:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Add User
+        uses: tgrall/action-user-org-registration@main
