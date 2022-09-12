@@ -12,3 +12,6 @@ jobs:
     steps:
       - name: Add User
         uses: tgrall/action-user-org-registration@main
+        with:
+          github_token : ${{ github.token }}
+          github_user : ${{ github.actor }}
