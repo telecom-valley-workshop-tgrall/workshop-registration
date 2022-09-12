@@ -13,7 +13,7 @@ jobs:
       - name: Add User
         uses: tgrall/action-user-org-registration@main
         with:
-          github_token : ${{ github.token }}
+          github_token : ${{ secrets.API_CALLS }}
           github_user : ${{ github.actor }}
           github_organization : ${{ github.repository_owner }}
           
